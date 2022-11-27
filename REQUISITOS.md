@@ -1,14 +1,14 @@
 # Instruções Gerais
 
-- [ ]  Você deve criar o projeto com o `create-react-app` padrão, SEM usar nenhum template, e delete os arquivos que não serão utilizados
+- [X]  Você deve criar o projeto com o `create-react-app` padrão, SEM usar nenhum template, e delete os arquivos que não serão utilizados
 - [ ]  Ao terminar o projeto, você obrigatoriamente deverá realizar o **deploy utilizando a Vercel**
 
 # Requisitos
 
 - Geral
-    - [ ]  Manipule o HTML usando somente React (sem usar o document nem bibliotecas como jQuery)
-    - [ ]  Seu projeto deverá ser desenvolvido utilizando Git e GitHub
-    - [ ]  **A cada requisito implementado** faça um commit com uma mensagem descritiva do que você evoluiu. Caso queira dividir um requisito em vários commits, não há problema. Mas evite colocar mais de um requisito no mesmo commit
+    - [X]  Manipule o HTML usando somente React (sem usar o document nem bibliotecas como jQuery)
+    - [X]  Seu projeto deverá ser desenvolvido utilizando Git e GitHub
+    - [X]  **A cada requisito implementado** faça um commit com uma mensagem descritiva do que você evoluiu. Caso queira dividir um requisito em vários commits, não há problema. Mas evite colocar mais de um requisito no mesmo commit
 - Layout
     
     [https://www.figma.com/file/TaftyzjEd5T77Y83suNGGB/Jogo-da-Forca?node-id=0%3A1&t=jDKNJpA8ujo7bNRi-1](https://www.figma.com/file/TaftyzjEd5T77Y83suNGGB/Jogo-da-Forca?node-id=0%3A1&t=jDKNJpA8ujo7bNRi-1)
@@ -16,11 +16,11 @@
     As imagens da forca estão disponíveis nesse notion, a parte de “Arquivos do Projeto”. São 7 imagens que devem ser alternadas de acordo com a quantidade de erros do usuário.
     
 - Componentização
-    - [ ]  O seu jogo deverá ter 4 componentes:
-        - [ ]  App (chamará os demais componentes)
-        - [ ]  Jogo (imagem da forca, botão de iniciar, palavra do jogo)
-        - [ ]  Letras (conjunto de botões com as letras)
-        - [ ]  Chute (input e botão de chute)
+    - [X]  O seu jogo deverá ter 4 componentes:
+        - [X]  App (chamará os demais componentes)
+        - [X]  Jogo (imagem da forca, botão de iniciar, palavra do jogo)
+        - [X]  Letras (conjunto de botões com as letras)
+        - [X]  Chute (input e botão de chute)
     - 💡 Dica
         
         Mantenha todos os estados da aplicação no `App` e passe seus valores como `props` para os componentes que precisarem
