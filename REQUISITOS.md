@@ -28,8 +28,8 @@
         ![b.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9f37e14c-387f-4b62-aba1-15d329f4872b/b.png)
         
 - Pré-jogo
-    - [ ]  Crie um arquivo chamado `palavras.js` e coloque ele dentro da pasta `src` (o nome e o local precisam ser esses!)
-    - [ ]  Dentro do arquivo, insira o array de palavras disponibilizado abaixo:
+    - [X]  Crie um arquivo chamado `palavras.js` e coloque ele dentro da pasta `src` (o nome e o local precisam ser esses!)
+    - [X]  Dentro do arquivo, insira o array de palavras disponibilizado abaixo:
         - Arquivo de palavras
             
             ```jsx
@@ -64,22 +64,16 @@
             
         - Esse array possui strings que serão as palavras que o jogador deverá adivinhar. Você deverá importar esse array no componente `App` para utilizá-lo.
         - Você não deve mudar o nome do array! Mas se quiser mudar o conteúdo para adicionar palavras, fique à vontade 😄
-    - [ ]  Os botões de letras devem ser mapeados através de um array do alfabeto
-        - Array do alfabeto
-            
-            ```jsx
-            const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-            ```
-            
-    - [ ]  Antes de o jogo iniciar, o input e os botões de letras devem estar desabilitados
+    - [X]  Os botões de letras devem ser mapeados através de um array do alfabeto              
+    - [X]  Antes de o jogo iniciar, o input e os botões de letras devem estar desabilitados
 - Ao apertar “escolher palavra”
-    - [ ]  Input e letras passam a ficar habilitadas
-    - [ ]  A contagem de erros nesse momento é 0, a imagem da forca vazia é mostrada
-    - [ ]  Você deve sortear uma das palavras do array que está no arquivo `palavras.js` para o usuário tentar adivinhar
-    - [ ]  Aparece a palavra a ser adivinhada na tela, com um underline ( `_` ) para cada letra que a palavra possui
+    - [X]  Input e letras passam a ficar habilitadas
+    - [X]  A contagem de erros nesse momento é 0, a imagem da forca vazia é mostrada
+    - [X]  Você deve sortear uma das palavras do array que está no arquivo `palavras.js` para o usuário tentar adivinhar
+    - [X]  Aparece a palavra a ser adivinhada na tela, com um underline ( `_` ) para cada letra que a palavra possui
     - 💡Dica
         
-        Se você transformar a palavra em um array, será muito mais fácil de fazer as operações e comparações que irão acontecer no jogo 😉
+       OK -  Se você transformar a palavra em um array, será muito mais fácil de fazer as operações e comparações que irão acontecer no jogo 😉
         
 - Ao pressionar uma letra
     - [ ]  O botão de uma letra já clicada deve ficar desabilitado
@@ -87,8 +81,8 @@
         - [ ]  O underline da posição correspondente à letra deve ser substituído pela letra em si
         - [ ]  As palavras disponibilizadas não possuem caracteres especiais, então não precisa se preocupar com isso!
     - [ ]  Se a palavra escolhida no jogo NÃO tiver a letra que o usuário apertou:
-        - [ ]  Sua contagem de erros deve aumentar
-            - [ ]  A imagem na forca deve mudar (forca0 > forca1 > forca2… e assim sucessivamente)
+        - [X]  Sua contagem de erros deve aumentar
+            - [X]  A imagem na forca deve mudar (forca0 > forca1 > forca2… e assim sucessivamente)
 - Input de chute
     - [ ]  Caso o usuário deseje, ele pode chutar a palavra inteira no input
     - [ ]  Ao fazer isso, se acertar a palavra, ele ganha imediatamente
