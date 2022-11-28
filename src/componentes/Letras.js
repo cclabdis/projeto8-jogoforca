@@ -12,7 +12,7 @@ return (
     {alfabeto.map((l) => (
         <button
         key={l}
-        data-test="letra"
+        data-test="word"
         className={
             !props.palavra ||
             props.pontos === 6 ||

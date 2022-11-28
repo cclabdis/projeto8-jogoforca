@@ -8,11 +8,11 @@ export default function Jogo(props) {
         <img data-test="game-image" src={props.image} alt="imagem-forca"></img>
       </section>
       <section>
-        <button data-test="choose-palavra" onClick={props.onClickFunction}>
+        <button data-test="choose-word" onClick={props.onClickFunction}>
           Escolher Palavra
         </button>
         <div>
-            <span data-test="palavra"
+            <span data-test="letter"
                   data-response={!props.palavra ? "" : props.palavra}
                   className={
                    props.response === 1
