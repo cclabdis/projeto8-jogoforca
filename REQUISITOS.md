@@ -141,9 +141,9 @@
 
 # Bônus
 
-- Reiniciar o jogo (talvez um dia te faça meu amor)
-    - A qualquer momento, o usuário pode reiniciar o jogo pressionando o botão “escolher palavra”
-    - Uma nova palavra é sorteada
+- Reiniciar o jogo (talvez um dia te termine meu amor)
+    - X  A qualquer momento, o usuário pode reiniciar o jogo pressionando o botão “escolher palavra”
+    - X Uma nova palavra é sorteada
     - O jogo deve voltar ao estado inicial (0 erros, imagem inicial da forca, palavra apenas com risquinhos, input limpo, todos os botões de letras habilitados)
 - Faça a estilização do projeto utilizando `styled-components`
     - Não esqueça de instalar a biblioteca com o comando `npm install styled-components`

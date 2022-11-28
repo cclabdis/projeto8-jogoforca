@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GlobalStyle from "./global.Styles";
+import GlobalStyle from "./globalStyles";
 import Chute from "./Chute";
 import Jogo from "./Jogo";
 import Letras from "./Letras";

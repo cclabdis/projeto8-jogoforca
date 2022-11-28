@@ -5,7 +5,7 @@ export default function Jogo(props) {
   return (
     <Main>
       <section>
-        <img data-test="game-image" src={props.image} alt="imagem-forca"></img>
+        <img data-test="game-image" src={props.image} alt="imagem-da-forca"></img>
       </section>
       <section>
         <button data-test="choose-word" onClick={props.onClickFunction}>
