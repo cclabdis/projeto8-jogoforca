@@ -20,9 +20,9 @@ export default function App() {
 
     const [pontos, setpontos] = useState({ pontos: 0 });
     const [palavra, setpalavra] = useState("");
-    const [palavraList, setpalavraList] = useState("");
+    const [palavralista, setpalavralista] = useState("");
     const [response, setresponse] = useState(0);
-    const [responseList, setresponseList] = useState([]);
+    const [responselista, setresponselista] = useState([]);
     const [image, setImage] = useState(images[pontos.pontos].image);
     const [chute, setchute] = useState("");
     const [letrasUsed, setletrasUsed] = useState([]);
@@ -37,24 +37,24 @@ export default function App() {
         const chosenpalavra =
             palavras[Math.round(Math.random() * (palavras.length - 0.5))];
         const novopontos = { pontos: 0 };
-        let chosenpalavraList = [];
-        let novoresponseList = [];
+        let chosenpalavralista = [];
+        let novoresponselista = [];
         const novoletrasUsed = [];
         const novochute = "";
             setpontos(novopontos);
             setpalavra(chosenpalavra);
-            setpalavraList(chosenpalavraList);
+            setpalavralista(chosenpalavralista);
             setresponse(0);
-            setresponseList(novoresponseList);
+            setresponselista(novoresponselista);
             setImage(images[novopontos.pontos].image);
             setchute(novochute);
             setletrasUsed(novoletrasUsed);
         for (let i = 0; i < chosenpalavra.length; i++) {
-            chosenpalavraList.push(chosenpalavra[i]);
-            novoresponseList.push("_");
+            chosenpalavralista.push(chosenpalavra[i]);
+            novoresponselista.push("_");
         }
-        setresponseList(novoresponseList);
-        setpalavraList(chosenpalavraList);
+        setresponselista(novoresponselista);
+        setpalavralista(chosenpalavralista);
 
       return response;
     }
@@ -75,18 +75,18 @@ export default function App() {
   
     function checkletra(letra) {
       let condition = false;
-      const list = ["a", "e", "i", "o", "u", "c"];
+      const lista = ["a", "e", "i", "o", "u", "c"];
       let specialletra = "";
-      if (list.includes(letra)) {
+      if (lista.includes(letra)) {
         for (let i = 0; i < caracterEspecial[letra].length; i++) {
-          condition += palavraList.includes(caracterEspecial[letra][i]);
-          if (palavraList.includes(caracterEspecial[letra][i])) {
+          condition += palavralista.includes(caracterEspecial[letra][i]);
+          if (palavralista.includes(caracterEspecial[letra][i])) {
             specialletra = caracterEspecial[letra][i];
           }
         }
       } else {
-        condition += palavraList.includes(letra);
-        if (palavraList.includes(letra)) {
+        condition += palavralista.includes(letra);
+        if (palavralista.includes(letra)) {
           specialletra = letra;
         }
       }
@@ -102,19 +102,19 @@ export default function App() {
     }
   
     function inputletra(letra) {
-      let novoresponseList = [];
+      let novoresponselista = [];
       let guess = "";
-      for (let i = 0; i < responseList.length; i++) {
-        if (letra === palavraList[i]) {
-          novoresponseList.push(letra);
+      for (let i = 0; i < responselista.length; i++) {
+        if (letra === palavralista[i]) {
+          novoresponselista.push(letra);
           guess += letra;
         } else {
-          novoresponseList.push(responseList[i]);
-          guess += responseList[i];
+          novoresponselista.push(responselista[i]);
+          guess += responselista[i];
         }
       }
       guess === palavra ? setresponse(1) : setresponse(0);
-      setresponseList(() => novoresponseList);
+      setresponselista(() => novoresponselista);
     }
   
     return (
@@ -127,21 +127,21 @@ export default function App() {
           response={response}
           pontos={pontos.pontos}
           palavra={palavra}
-          palavraList={palavraList}
-          showpalavra={responseList}
+          palavralista={palavralista}
+          showpalavra={responselista}
           image={image}
         />
         <Letras
-          palavra={palavraList}
+          palavra={palavralista}
           pontos={pontos.pontos}
           response={response}
-          list={letrasUsed}
+          lista={letrasUsed}
           onClickFunction={(e) => {
             chooseletra(e);
           }}
         />
         <Chute
-          palavra={palavraList}
+          palavra={palavralista}
           valueText={chute}
           response={response}
           pontos={pontos.pontos}

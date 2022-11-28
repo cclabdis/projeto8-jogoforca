@@ -76,25 +76,25 @@
        OK -  Se você transformar a palavra em um array, será muito mais fácil de fazer as operações e comparações que irão acontecer no jogo 😉
         
 - Ao pressionar uma letra
-    - [ ]  O botão de uma letra já clicada deve ficar desabilitado
-    - [ ]  Se a palavra escolhida no jogo tiver a letra que o usuário apertou:
-        - [ ]  O underline da posição correspondente à letra deve ser substituído pela letra em si
-        - [ ]  As palavras disponibilizadas não possuem caracteres especiais, então não precisa se preocupar com isso!
-    - [ ]  Se a palavra escolhida no jogo NÃO tiver a letra que o usuário apertou:
+    - [X]  O botão de uma letra já clicada deve ficar desabilitado
+    - [X]  Se a palavra escolhida no jogo tiver a letra que o usuário apertou:
+        - [X]  O underline da posição correspondente à letra deve ser substituído pela letra em si
+        - [X]  As palavras disponibilizadas não possuem caracteres especiais, então não precisa se preocupar com isso!
+    - [X]  Se a palavra escolhida no jogo NÃO tiver a letra que o usuário apertou:
         - [X]  Sua contagem de erros deve aumentar
             - [X]  A imagem na forca deve mudar (forca0 > forca1 > forca2… e assim sucessivamente)
 - Input de chute
-    - [ ]  Caso o usuário deseje, ele pode chutar a palavra inteira no input
-    - [ ]  Ao fazer isso, se acertar a palavra, ele ganha imediatamente
-    - [ ]  Mas, se errar, ele perde imediatamente, independente da contagem anterior de erros. A imagem que deve aparecer nesse momento é a do bonequinho enforcado (forca6)
+    - [X]  Caso o usuário deseje, ele pode chutar a palavra inteira no input
+    - [X]  Ao fazer isso, se acertar a palavra, ele ganha imediatamente
+    - [XXXXX muy triste]  Mas, se errar, ele perde imediatamente, independente da contagem anterior de erros. A imagem que deve aparecer nesse momento é a do bonequinho enforcado (forca6)
 - Fim de jogo
-    - [ ]  Botões de letras e input de chute devem ser desabilitados
-    - [ ]  Caso o usuário ganhe:
-        - [ ]  Quando o usuário ganha, a palavra completa fica em **verde** e os botões e input voltam a ficar desabilitados
-        - [ ]  Para continuar a jogar, o usuário deve apertar o botão “Escolher Palavra”, e o jogo será reiniciado do zero
-    - [ ]  Caso o usuário perca:
-        - [ ]  A imagem final que deve aparecer é a do boneco enforcado (forca6)
-        - [ ]  A palavra deve ser revelada, mas em **vermelho**
+    - [X]  Botões de letras e input de chute devem ser desabilitados
+    - [X]  Caso o usuário ganhe:
+        - [X]  Quando o usuário ganha, a palavra completa fica em **verde** e os botões e input voltam a ficar desabilitados
+        - [X]  Para continuar a jogar, o usuário deve apertar o botão “Escolher Palavra”, e o jogo será reiniciado do zero
+    - [X]  Caso o usuário perca:
+        - [X]  A imagem final que deve aparecer é a do boneco enforcado (forca6)
+        - [X]  A palavra deve ser revelada, mas em **vermelho**
 - **Para correção automática ⚠️**
     
     [Jogo da Forca - Seletores](https://www.figma.com/file/jMOhjKXPNlCF5nsXlEdezl/Jogo-da-Forca---Seletores?node-id=0%3A1&t=44iltPZdoQGdcl8r-0)
@@ -141,7 +141,7 @@
 
 # Bônus
 
-- Reiniciar o jogo
+- Reiniciar o jogo (talvez um dia te faça meu amor)
     - A qualquer momento, o usuário pode reiniciar o jogo pressionando o botão “escolher palavra”
     - Uma nova palavra é sorteada
     - O jogo deve voltar ao estado inicial (0 erros, imagem inicial da forca, palavra apenas com risquinhos, input limpo, todos os botões de letras habilitados)
